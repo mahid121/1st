@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 90vw;
+}
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+
+.panel h3{
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+}
+.panel.active{
+    flex: 5;
+}
+
+
+.panel.active h3{
+    transition: 0.7s ease-in;
+    opacity: 1;
+}
